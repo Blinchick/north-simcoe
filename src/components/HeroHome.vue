@@ -17,13 +17,19 @@
   </div>
 
     <section id="section05" class="demo">
-    <a style="margin-bottom: 20px" href="#"><span></span></a>
+    <a style="margin-bottom: 20px; cursor: pointer"  @click="scrollToNext"><span class="scroll-arrow"></span></a>
     </section>
 </template>
 
 <script>
 export default {
   name: "HeroHome",
+    methods: {
+        scrollToNext() {
+            const nextSection = document.querySelector('#next-section')
+            nextSection.scrollIntoView({ behavior: 'smooth' })
+        }
+    },
 };
 </script>
 
