@@ -52,33 +52,6 @@ export default {
   background-color: rgba(0, 128, 128, 0.6);
 }
 
-a {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    display: inline-block;
-    transform: translate(0, -50%);
-    text-decoration: none;
-    transition: opacity 0.3s;
-}
-
-a:hover {
-    opacity: 0.5;
-}
-
-a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
-
 section {
     position: relative;
     width: 100%;
@@ -157,16 +130,6 @@ section::after {
         transform: rotate(-45deg) translate(-20px, 20px);
         opacity: 0;
     }
-}
-
-a span {
-    width: 24px;
-    height: 24px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    transform: rotate(-45deg);
-
-    animation: scroll-down 1.5s infinite;
 }
 
 @keyframes scroll-down {
